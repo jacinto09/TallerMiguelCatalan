@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Imagenes/tallerlogo.ico" type="image/x-icon">
+    <title>Taller Miguel Catalán</title>
+</head>
+<body>
+    <ul id="myMenu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Inicio</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Servicios</a></li>
+        <div id="img-logo"><img src="./Imagenes/logo taller.png" alt="logotaller"></div>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Sobre Nosotros</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Contacto</a></li>
+    </ul>
+    <!-- navegador entre paginas -->
+    <!-- <header class="menu-container">
+        <div class="menu-items"><a href="./index.html">Inicio</a></div>
+        <div class="menu-items"><a href="./servicios.html">Servicios</a></div>
+        <div id="img-logo"><img src="./Imagenes/logo taller.png" alt="logotaller"></div>
+        <div class="menu-items"><a href="./aboutUs.html">Quienes somos</a></div>
+        <div class="menu-items"><a href="./contact.html">Contacto</a></div>
+        <i class="fas fa-bars" id="burger"></i>
+        
+    </header> -->
+    <div id="fullpage">
+    <div class="section">
+         <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="./Imagenes/foto2.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./Imagenes/foto1.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        
+    
+    <div class="texto">Tu taller de confianza en Chiclana de la frontera.</div>
+    <div class="tarjetas-container">
+        <div class="tarjeta encuentranos">
+            <div class="icono-targeta">
+                <i class="fas fa-warehouse"></i>
+            </div>
+            <h1 class="texto2">Encuentranos</h1>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, vitae.</p>
+            <button class="boton-t"> <a href="https://www.google.com/maps/place/Talleres+Miguel+Catalan/@36.4269447,-6.1496417,15z/data=!4m5!3m4!1s0x0:0x4c3b24cf4f375deb!8m2!3d36.4269447!4d-6.1496417" target="_blank">Localización</a></button>
+        </div>
+        <div class="tarjeta cita">
+            <div class="icono-targeta">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h1 class="texto2">Cita taller</h1>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, vitae.</p>
+            <button class="boton-t"> <a href="https://form.jotform.com/211404019928048" target="_blank">Pedir cita</a></button>
+        </div>
+        <div class="tarjeta ayuda">
+            <div class="icono-targeta">
+                <i class="fas fa-user-check"></i>
+            </div>
+            <h1 class="texto2">¿Podemos ayudarte?</h1>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, vitae.</p>
+            <button class="boton-t"> <a href="#fourthPage">Consultar</a></button>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="servicios-container">
+        <video class="video-background"  muted= 1 data-autoplay loop= 1 load = "lazy" src="./Imagenes/¡AUTODOC TOUR COMPLETO POR EL TALLER!.mp4"></video>
+        <div class="servicio">
+            <img src="./Imagenes/coche-humo.jpg" alt="">
+            <h1>Reparación</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
+            <button> Detalles</button>
+        </div>
+        <div class="servicio">
+            <img src="./Imagenes/aceite.jpg" alt="">
+            <h1>Cambio de aceite</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
+            <button> Detalles</button>
+        </div>
+        <div class="servicio">
+            <img src="./Imagenes/analisis.jpg" alt="">
+            <h1>Analisis mecanico</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
+            <button> Detalles</button>
+        </div>
+        <div class="servicio">
+            <img src="./Imagenes/frenos.jpg" alt="">
+            <h1>Frenos</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
+            <button>Detalles</button>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <section class="imagen-titulo-container">
+        <div class="titulo-aboutus">Quiénes somos</div>
+    </section>
+    <h1 class="titulo-description">Nuestro trabajo y apuesta de futuro.</h1>
+    <p class="texto-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nulla aperiam minima ut reprehenderit et magni sit iure voluptatem minus culpa debitis blanditiis impedit iste rem beatae deserunt, odio laudantium! Doloremque qui, numquam dicta beatae similique neque velit placeat nulla ducimus blanditiis temporibus, rem laboriosam. Porro nulla fugit unde sint.</p>
+
+</div>
+<div class="section">
+    <section class="contacto">
+        
+    </section>
+    <div class="email-telefono">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fe0000" fill-opacity="1" d="M0,160L34.3,176C68.6,192,137,224,206,229.3C274.3,235,343,213,411,213.3C480,213,549,235,617,250.7C685.7,267,754,277,823,250.7C891.4,224,960,160,1029,138.7C1097.1,117,1166,139,1234,122.7C1302.9,107,1371,53,1406,26.7L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+          </svg>
+        <div class="mail">
+            <i class="far fa-envelope" id="i-email"></i><a href="mailto:miguelcatalantaller@gmail.com">Email a: miguelcatalantaller@gmail.com</a>
+        </div>
+        <!-- <div class="socials"><a href="https://www.facebook.com/Taller-mecanico-miguel-catalan-105278464169898/photos/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f" id="facebook"></i></a></div>
+        <div class="socials"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="instagram"></i></a></div> -->
+        <div class="telefono">
+            <i class="fas fa-phone" id="i-telefono"></i>Teléfono: 600898765
+        </div>
+        
+       
+    </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="./src/app.js"></script>
+
+</body>
+</html>
+    

@@ -1,0 +1,654 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    body{
+        perspective: 3d;
+        perspective-origin: 3d;
+        background: #e8eaea;
+        scroll-behavior: smooth;
+    }
+    .fp-right{
+            width: 300px;
+            color: black    ;
+            z-index: 2000;
+            background-color: black;
+        }
+    a{
+        text-decoration: none;
+        color: #161a1d;
+    }
+    #myMenu{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        border-bottom: 1px solid black;
+        background:#f5f3f4;
+        position: sticky;
+        top: 0;
+        z-index: 9000;
+    }
+    #myMenu li{
+        list-style-type: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin: 0 40px;
+    }
+    #myMenu li:hover{
+        text-shadow: 0 0 10px #ba181b;
+        
+    }
+    .menu-items{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin: 0 40px;
+    }
+    .show{
+        opacity: 1;
+    }
+    .menu-items:hover{
+        text-shadow: 0 0 10px #ba181b;
+        
+    }
+    #myMenu img{
+        width: 100px;
+        border-radius: 5px;
+        box-shadow:0 0 10px rgb(44, 44, 44);
+    }
+    #myMenu img:hover{
+        box-shadow: none;
+    }
+
+    /* .principal{
+        display: flex;
+        position: relative;
+        flex: 1 1 ;
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+        align-content: center;
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(212,212,212,1) 100%);
+        object-fit: fill;
+        border-bottom: 1px solid rgb(110, 110, 110);
+        
+
+    } */
+    .splide{
+        position: relative;
+        /* flex: 1 1 ; */
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+        align-content: center; 
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(212,212,212,1) 100%);
+        border-bottom: 1px solid rgb(110, 110, 110);
+       
+        
+
+    }
+    .texto{
+        text-align: center;
+        margin: 30px;
+        font-weight: 50;
+        color: #858585;
+        font-size: 25px;
+    }
+    .tarjetas-container{
+        display: flex;
+        width: 100%;
+        height: 40vh;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .tarjeta{
+        display: flex;
+        flex: 0 0 15%;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 25%;
+        height: 70%;
+        margin: 20px 40px;
+        border-radius: 5px;
+        border: 2px solid black;
+        position: relative;
+    }
+    .tarjetas-container div:hover{
+        box-shadow: 0 0 10px black;
+        border: 2px solid #ba181b;
+        color: #ba181b;
+    }
+    .icono-targeta{
+        width: 35%;
+        height: 35%;
+        margin: 10px 20px;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+        
+        
+    }
+    .icono-targeta i{
+        display: flex;  
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+    }
+    .texto2{
+        display: flex;
+        border: none;
+        width: 80%;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+    
+    }
+    .texto2:hover{
+        box-shadow: none;
+    }
+    .para{
+        display: flex;
+        width: 80%;
+        height: 20px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60%;
+    }
+    .boton-t{
+        display: flex;
+        width: 40%;
+        height: 40px;
+        font-size: 10px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* background: #ba181b ; */
+        background: rgb(148, 148, 148);
+        top: 80%;
+        box-shadow: none;
+    }
+    .boton-t:hover{
+        box-shadow: 0 0 5px  #fe0000;
+        /* box-shadow: 0 0 10px black; */
+    }
+    .servicios-container{
+
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 100px);
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    .video-background{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        object-fit: cover;
+        
+    }
+    .servicio{
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        flex: 0 0 15vw;
+        margin: 0 5vw 0 5vw;
+        height: 60%;
+        margin-top: 2%;
+        background: rgb(148, 148, 148);
+        border: 2px solid black;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        opacity: 0.8;
+    }
+    .servicio:hover{
+        box-shadow: 0 0 20px  #fe0000;
+        /* background: #fe0000 ; */
+        background: rgb(148, 148, 148);
+        opacity: 1;
+    }
+    .servicio img{
+        object-fit: contain;
+        width: 40%;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-top: 5%;
+    }
+    .servicio h1{
+        font-size: 20px;
+        font-weight: lighter;
+        align-self: center;
+        justify-self: center;
+        margin-top: 10%;
+    
+    }
+    .servicio p{
+        font-size: 15px;
+        font-weight: lighter;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        margin: 5% 10%;
+    }
+    .servicio button{
+        display: none;
+        width: 70%;
+        height: 10%;
+        margin-top: 20%;
+        border-radius: 5px;
+    }
+    .imagen-titulo-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40vh;
+        width: 100%;
+        background-image: linear-gradient(
+            180deg
+            ,rgba(27,31,37,0) 0%,#1b1f25 100%), url(/Imagenes/car-dealer-36.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+    }
+    .titulo-aboutus{
+        font-family: fantasy;
+        color: #f5f3f4 ;
+        font-size: 60px;
+        padding-left: 50px;
+        opacity: 0.7;
+    }
+    .titulo-description{
+        font-size: 30px;
+        text-align: center;
+        font-weight: lighter;
+        color: gray;
+        margin-top: 8vh;
+        
+    }
+    .texto-descripcion{
+        font-size: 20px;
+        text-align: center;
+        font-weight: lighter;
+        color: black;
+        margin: 8vh 20vw;
+    }
+
+    .contadores{
+        display: flex;
+        width: 100%;
+        height: 30vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contador-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    
+    .contador-container h1{
+        font-size: 20px;
+        margin: 30px;
+        color: gray;
+    }
+    .contador1 , .contador2 , .contador3{
+        color: red;
+    }
+    .contacto{
+        width: 100%;
+        height: 70vh;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        background: #fe0000;
+        color: rgb(190, 190, 190);
+        background-image: linear-gradient(
+            180deg
+            ,rgba(27,31,37,0) 0%,#1b1f25 100%),url(/Imagenes/tallerfachada.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            
+        
+            
+    }
+    .email-telefono{
+        width: 100%;
+        height: 16vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    .email-telefono svg{
+        position: absolute;
+        top: 20%;
+        object-fit: cover;
+        min-width: 10%;
+        min-height: 5%;
+    }
+    
+    
+    #i-email{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: #fe0000;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid white;
+        left: -20%;
+        font-size: 30px;
+        box-shadow: inset -3px 1px 5px black;
+        transition: all 1s linear;
+    }
+    #i-email:hover{
+    box-shadow: inset 3px -1px 5px black;
+    }
+    .mail{
+        display: flex;
+        position: relative;
+        border-radius: 15px;
+        background:  black;
+        width: 22%;
+        height: 44%;
+        padding-left: 50px;
+        align-items: center;
+        color: rgb(209, 209, 209);
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid black;
+        
+    }
+    
+    .mail a{
+        color: rgb(209, 209, 209);
+    }
+    .mail:hover{
+        color: #fe0000;
+    }
+    .mail:hover #i-email{
+        transform: scale(0.85);
+        
+    }
+    #i-telefono{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: #fe0000;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid white;
+        left: -20%;
+        font-size: 30px;
+        box-shadow: inset -3px 1px 5px black;
+        transition: all 1s linear;
+    }
+    #i-telefono:hover{
+        box-shadow: inset 3px -1px 5px black;
+        transform: scale(0.85);
+    }
+    .telefono:hover{
+        color: #fe0000;
+    }
+    .telefono{
+        display: flex;
+        position: relative;
+        border-radius: 15px;
+        background:  black;
+        width: 22%;
+        height: 44%;
+        padding-left: 50px;
+        align-items: center;
+        color: rgb(209, 209, 209);
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+    #instagram{
+        display: flex;
+        color: rgb(255, 140, 245);
+        justify-content: center;
+        align-items: center;
+        background: rgb(255, 115, 0);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        box-shadow: inset -3px 1px 5px black;
+        transition: all 1s linear;
+        cursor: pointer;
+    }
+    #facebook{
+        color: rgb(26, 0, 121);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 255);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        box-shadow: inset -3px 1px 5px black;
+        transition: all 1s linear;
+        cursor: pointer;
+    }
+    .social-icon1{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        
+    }
+    #burger{
+        opacity: 0;
+        position: absolute;
+        cursor: pointer;
+    }
+    .show{
+        display: flex !important;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        z-index: 5000;
+        background: rgb(202, 202, 202);
+        width: 15%;
+        height: 20%;
+        opacity: 1;
+    }
+    @media only screen and (max-width: 669px) {
+        /* primera seccion */
+        #myMenu{
+            display: none;
+        }
+        #burger{
+            right: 50px;
+            opacity: 1;
+        }
+        .principal{
+            height: 35vh;
+        }
+        .texto{
+            height: 5vh;
+        }
+        .tarjetas-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 40vh;
+        }
+        .tarjeta{
+            width: 80%;
+            height: 35%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            
+        }   
+        .icono-targeta{
+            display: flex;
+            position: absolute;
+            left: 5%;
+            width: 1%;
+            height: 1%;
+            border: none;
+        }
+        .icono-targeta i{
+            font-size: 180%;
+        }
+        .texto2{
+            position: absolute;
+            width: 60%;
+            font-size: 85%;
+            top: 6%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        .para{
+            display: none;
+        }
+        .boton-t{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) ;
+            right: 5%;
+            width: 22%;
+            height: 60%;
+        }
+        /* segunda seccion */
+        .servicios-container{
+            height: 100vh;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            flex-basis: 50%; 
+        }
+        .servicio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+            text-align: center;
+            min-width: 90%;
+            height: 20%;
+            border-radius: 10px;
+            opacity: 0.7;
+            
+        }
+        .servicio img{
+            display: block;
+            object-fit: cover;
+            margin-top: 0;
+            margin-left: 5%;
+            width: 25%;
+            height: 80%;
+            
+        }
+        .servicio h1{
+           display: block;
+           align-items: center;
+           justify-content: center;
+            width: 100%;
+            height: 50%;
+            margin-top: 0;
+            margin-left: 5%;
+        }
+        .servicio p{
+            display: none;
+        }
+        .servicio button{
+            display: block;
+            width: 20%;
+            height: 80%;
+            margin-top: 0;
+            margin-right: 5%;
+            padding: 1%;
+        }
+        
+        /* tercera seccion */
+        
+        .titulo-description{
+            font-size: 150%;
+            border-bottom: 2px whitesmoke solid;
+           height: 12vh;
+        }
+        .texto-descripcion{
+            font-size: 100%;
+            text-align: left;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        /* cuarta seccion */
+        .contacto{
+            height: 55vh;
+        }
+        .email-telefono{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            height: 40vh;
+            position: relative;
+        }
+        .mail{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 70%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mail a{
+            font-size: 73%;
+        }
+        .telefono{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 70%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .email-telefono svg{
+            position: absolute;
+            top: 50%;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
