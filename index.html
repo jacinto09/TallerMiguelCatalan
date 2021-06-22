@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Taller mecanico en Chiclana de la Frontera donde encontraras los mejores servicios junto a las mejores marcas ">
     <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./Imagenes/tallerlogo.ico" type="image/x-icon">
-    <title>Taller Miguel Catalán</title>
+    <title>Taller Miguel Catalan</title>
 </head>
 <body>
     <ul id="myMenu">
@@ -19,16 +19,14 @@
         <li data-menuanchor="thirdPage"><a href="#thirdPage">Sobre Nosotros</a></li>
         <li data-menuanchor="fourthPage"><a href="#fourthPage">Contacto</a></li>
     </ul>
-    <!-- navegador entre paginas -->
-    <!-- <header class="menu-container">
-        <div class="menu-items"><a href="./index.html">Inicio</a></div>
-        <div class="menu-items"><a href="./servicios.html">Servicios</a></div>
-        <div id="img-logo"><img src="./Imagenes/logo taller.png" alt="logotaller"></div>
-        <div class="menu-items"><a href="./aboutUs.html">Quienes somos</a></div>
-        <div class="menu-items"><a href="./contact.html">Contacto</a></div>
-        <i class="fas fa-bars" id="burger"></i>
-        
-    </header> -->
+    <div class="footer">
+    
+    <div id="inicio"><a href="#firstPage"><i class="fas fa-home"></i></a></div>
+    <div id="serviciosb"><a href="#secondPage"><i class="fas fa-oil-can"></i></a></div>
+    <div id="logo"><img src="./Imagenes/logo taller.png" alt="logotaller"></div>
+    <div id="aboutusb"><a href="#thirdPage"><i class="fas fa-address-card"></i></a></div>
+    <div id="contactob"><a href="#fourthPage"><i class="fas fa-phone"></i></a></div>
+    </div>
     <div id="fullpage">
     <div class="section">
          <div class="splide">
@@ -49,7 +47,7 @@
             </div>
             <h1 class="texto2">Encuentranos</h1>
             <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, vitae.</p>
-            <button class="boton-t"> <a href="https://www.google.com/maps/place/Talleres+Miguel+Catalan/@36.4269447,-6.1496417,15z/data=!4m5!3m4!1s0x0:0x4c3b24cf4f375deb!8m2!3d36.4269447!4d-6.1496417" target="_blank">Localización</a></button>
+            <button class="boton-t" > <a href="https://www.google.com/maps/place/Talleres+Miguel+Catalan/@36.4269447,-6.1496417,15z/data=!4m5!3m4!1s0x0:0x4c3b24cf4f375deb!8m2!3d36.4269447!4d-6.1496417" target="_blank">Localización</a></button>
         </div>
         <div class="tarjeta cita">
             <div class="icono-targeta">
@@ -76,25 +74,47 @@
             <img src="./Imagenes/coche-humo.jpg" alt="">
             <h1>Reparación</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
-            <button> Detalles</button>
+            <button id= "b-reparacion"> Detalles</button>
+        </div>
+        <div id="descripcion-r">
+            <h1>Reparacion</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum!</p>
+            <button id="cerrar-r" class="b-cerrar">X</button>
         </div>
         <div class="servicio">
             <img src="./Imagenes/aceite.jpg" alt="">
             <h1>Cambio de aceite</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
-            <button> Detalles</button>
+            <button id="b-aceite"> Detalles</button>
+        </div>
+        <div id="descripcion-a">
+            <h1>Aceite</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum!</p>
+            <button id="cerrar-a" class="b-cerrar">X</button>
         </div>
         <div class="servicio">
             <img src="./Imagenes/analisis.jpg" alt="">
             <h1>Analisis mecanico</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
-            <button> Detalles</button>
+            <button id="b-analisis"> Detalles</button>
+            
+        </div>
+        <div id="descripcion-an">
+            <h1>Analisis</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum!</p>
+            <button id="cerrar-an" class="b-cerrar">X</button>
         </div>
         <div class="servicio">
             <img src="./Imagenes/frenos.jpg" alt="">
             <h1>Frenos</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error?</p>
-            <button>Detalles</button>
+            <button id="b-frenos">Detalles</button>
+            
+        </div>
+        <div id="descripcion-f">
+            <h1>Frenos</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum!</p>
+            <button id="cerrar-f" class="b-cerrar">X</button>
         </div>
     </div>
 </div>
@@ -117,8 +137,6 @@
         <div class="mail">
             <i class="far fa-envelope" id="i-email"></i><a href="mailto:miguelcatalantaller@gmail.com">Email a: miguelcatalantaller@gmail.com</a>
         </div>
-        <!-- <div class="socials"><a href="https://www.facebook.com/Taller-mecanico-miguel-catalan-105278464169898/photos/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f" id="facebook"></i></a></div>
-        <div class="socials"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="instagram"></i></a></div> -->
         <div class="telefono">
             <i class="fas fa-phone" id="i-telefono"></i>Teléfono: 600898765
         </div>
@@ -127,6 +145,7 @@
     </div>
 </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script src="./src/app.js"></script>

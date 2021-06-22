@@ -1,19 +1,22 @@
-const coche = document.getElementById('coche');
-const burger = document.getElementById('burger');
-const menu = document.querySelector('#myMenu');
-const buttonR = document.querySelector('.btn-r');
-const buttonL = document.querySelector('.btn-l');
-const contador1 = document.querySelector('.contador1');
-const email = document.querySelector('.fa-envelope');
-const emailOculto = document.querySelector('.email-oculto');
+
+const menu = document.getElementById('myMenu');
+const buttonr = document.getElementById('b-reparacion');
+const buttona = document.getElementById('b-aceite');
+const buttonan = document.getElementById('b-analisis');
+const buttonf= document.getElementById('b-frenos');
+const buttoncerrar_r = document.getElementById('cerrar-r');
+const buttoncerrar_a = document.getElementById('cerrar-a');
+const buttoncerrar_an = document.getElementById('cerrar-an');
+const buttoncerrar_f = document.getElementById('cerrar-f');
+
 // full page 
 new fullpage('#fullpage', {
 	//options here
    navigation: true,
    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-	menu: '#myMenu',
+	menu:['#myMenu', '.footer'],
 	autoScrolling:true,
-	scrollHorizontally: true,
+	
    
    
    
@@ -24,24 +27,44 @@ new Splide( '.splide',{
    perPage: 1 ,
    type   : 'loop',
    cover: 'true'
-}).mount();;
+}).mount();
 
+// functions
 
-// responsive menu
-burger.addEventListener('click',()=>{
-   menu.classList.toggle('show');
+buttonr.addEventListener('click', () =>{
+   document.getElementById('descripcion-r').classList.toggle('detallesr');
+});
+buttoncerrar_r.addEventListener('click',() =>{
+   document.getElementById('descripcion-r').classList.remove('detallesr');
 });
 
 
-buttonR.addEventListener('click', function (e) {
-   coche.src = "/Imagenes/foto1.jpg";
+buttona.addEventListener('click', () =>{
+   document.getElementById('descripcion-a').classList.toggle('detallesr');
 });
-buttonL.addEventListener('click', function (e) {
-      coche.src = "/Imagenes/foto2.jpg";
-   });
+buttoncerrar_a.addEventListener('click',() =>{
+   document.getElementById('descripcion-a').classList.remove('detallesr');
+});
 
-   function toggleMenu(event){
-      document.getElementById('myMenu').classList.toggle ='show'
-   };
+
+buttonan.addEventListener('click', () =>{
+   document.getElementById('descripcion-an').classList.toggle('detallesr');
+});
+buttoncerrar_an.addEventListener('click',() =>{
+   document.getElementById('descripcion-an').classList.remove('detallesr');
+});
+
+
+buttonf.addEventListener('click', () =>{
+   document.getElementById('descripcion-f').classList.toggle('detallesr');
+});
+buttoncerrar_f.addEventListener('click',() =>{
+   document.getElementById('descripcion-f').classList.remove('detallesr');
+});
+
+
+
+
+
 
 
