@@ -257,7 +257,7 @@
         width: 100%;
         background-image: linear-gradient(
             180deg
-            ,rgba(27,31,37,0) 0%,#1b1f25 100%), url(/Imagenes/car-dealer-36.jpg);
+            ,rgba(27,31,37,0) 0%,#1b1f25 100%), url(./Imagenes/car-dealer-36.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -319,7 +319,7 @@
         color: rgb(190, 190, 190);
         background-image: linear-gradient(
             180deg
-            ,rgba(27,31,37,0) 0%,#1b1f25 100%),url(/Imagenes/tallerfachada.jpg);
+            ,rgba(27,31,37,0) 0%,#1b1f25 100%),url(./Imagenes/tallerfachada.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top;
