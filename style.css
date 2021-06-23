@@ -780,3 +780,154 @@
             height: 100%;
         }
     }
+    @media only screen and (min-width : 670px) and (max-width : 1024px){
+        /* Primera Pagina */
+        
+       
+        
+        .texto{
+            height: 3vh;
+        }
+        .tarjetas-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 40vh;
+        }
+        .tarjeta{
+            width: 80%;
+            height: 35%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            
+        }   
+        .icono-targeta{
+            display: flex;
+            position: absolute;
+            left: 5%;
+            width: 1%;
+            height: 1%;
+            border: none;
+        }
+        .icono-targeta i{
+            font-size: 180%;
+        }
+        .texto2{
+            position: absolute;
+            width: 60%;
+            font-size: 125%;
+            top: 12%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        .para{
+            display: none;
+        }
+        .boton-t{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) ;
+            right: 5%;
+            width: 22%;
+            height: 60%;
+        }
+        /* SEGUNDA PAGINA */
+
+        .servicios-container{
+            height: 100vh;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            flex-basis: 50%; 
+            padding-bottom: 10%;
+            
+        }
+        .servicio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+            text-align: center;
+            min-width: 90%;
+            height: 15% !important;
+            border-radius: 10px;
+            opacity: 0.7;
+            
+            
+        }
+        .servicio img{
+            display: block;
+            object-fit: cover;
+            margin-top: 0;
+            margin-left: 5%;
+            width: 25%;
+            height: 80%;
+            
+        }
+        .servicio h1{
+           display: block;
+           align-items: center;
+           justify-content: center;
+            width: 100%;
+            height: 50%;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .servicio p{
+            display: none;
+        }
+        .servicio button{
+            display: block;
+            width: 20%;
+            height: 80%;
+            margin-top: 0;
+            margin-right: 5%;
+            padding: 1%;
+        }
+        /* CUARTA PAGINA */
+
+        .contacto{
+            height: 55vh;
+        }
+        .email-telefono{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            height: 30vh;
+            position: relative;
+        }
+        .mail{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 70%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mail a{
+            font-size: 73%;
+        }
+        .telefono{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 70%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .email-telefono svg{
+            position: absolute;
+            top: 50%;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
